@@ -5,3 +5,62 @@
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    header {
+        width: 50%;
+        height: 15%;
+        margin: 0 auto;
+        border-bottom: 2px solid black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+        .input-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            input,
+            button {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    main {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        #item-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            
+            li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 10px 0;
+                
+                p,
+                button {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
