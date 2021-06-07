@@ -1,7 +1,7 @@
 const input = document.querySelector('#text-field');
 const addItemBtn = document.querySelector('#submit-btn');
 const clearListBtn = document.querySelector('#clear-btn');
-const list = document.querySelector('#list');
+const list = document.querySelector('#item-list');
 
 function getInput() {
     let value = input.value;
@@ -12,7 +12,8 @@ function getInput() {
 
 function createMarkup(value) {
     let listElem = document.createElement('li');
-    let label = document.createElement('span');
+    // let label = document.createElement('span');
+    let label = document.createElement('p');
     let removeBtn = document.createElement('button');
 
     label.innerHTML = value;
